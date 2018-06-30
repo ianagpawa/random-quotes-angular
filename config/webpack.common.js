@@ -37,6 +37,10 @@ module.exports = {
             loader: 'file-loader?name=assets/[name].[hash].[ext]'
         },
         {
+            test: /\.scss$/,
+            loaders: ["style-loader", "css-loader", "sass-loader"]
+        },
+        {
             test: /\.css$/,
             exclude: helpers.root('src', 'app'),
             loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
