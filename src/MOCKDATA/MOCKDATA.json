@@ -1,0 +1,19 @@
+{
+    "quotes": [
+        {
+            "quoter": "test quoter",
+            "quote": "test quote",
+            "source": "test source"
+        },
+        {
+            "quoter": "test quoter1",
+            "quote": "test quote1",
+            "source": "test source1"
+        },
+        {
+            "quoter": "test quoter2",
+            "quote": "test quote2",
+            "source": "test source2"
+        }
+    ]
+}
