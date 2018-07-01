@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { RootComponent } from './root.component';
 import { AgGridModule } from 'ag-grid-angular';
 
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 
+import { RootComponent } from './root.component';
+import { GridComponent } from '../grid/grid.component';
+import { QuoteComponent } from '../quote/quote.component';
 @NgModule({
     imports: [
         BrowserModule,
@@ -19,7 +21,9 @@ import {ButtonModule} from 'primeng/button';
         ButtonModule
     ],
     declarations: [
-        RootComponent
+        RootComponent,
+        GridComponent,
+        QuoteComponent
     ],
     bootstrap: [ RootComponent ]
 })
