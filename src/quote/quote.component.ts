@@ -10,10 +10,9 @@ require('./quote.component.scss');
     templateUrl: './quote.component.html',
 })
 export class QuoteComponent implements OnInit, AfterViewInit, OnDestroy {
-    quotes: Quote[]
-
-    constructor(private QuoteService: QuoteService) {
-        this.retrieveQuotes();
+    quote: Quote;
+    constructor() {
+        
     }
 
     ngOnInit() {
@@ -28,12 +27,4 @@ export class QuoteComponent implements OnInit, AfterViewInit, OnDestroy {
 
     }
 
-    retrieveQuotes() {
-        this.QuoteService.getQuotes()
-            .subscribe((data) => {
-                if (data.quotes) {
-                    this.quotes = data.quotes;
-                }
-            })
-    }
 }
