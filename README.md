@@ -1,10 +1,10 @@
-# Angular Webpack Seed
+# Random Quotes Generator
 ### By Ian Agpawa
-##### This is an Angular with Webpack seed project.
+##### Random Quote Generator built with Angular and Webpack.
 
 
 ### Quick Start
--Clone the repo: `git clone https://github.com/ianagpawa/portfolio.git`
+-Clone the repo: `git clone https://github.com/ianagpawa/random-quotes-angular.git`
 
 ### Install Dependencies
 
