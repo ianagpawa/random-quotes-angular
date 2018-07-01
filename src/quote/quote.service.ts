@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Quote } from './quote';
+const MOCKDATA = require('../MOCKDATA/MOCKDATA.json');
 
 @Injectable()
 export class QuoteService {
@@ -9,6 +11,10 @@ export class QuoteService {
       private HttpClient: HttpClient
   ) { 
       
+  }
+
+  getQuotes(): Observable<any> {
+    return Observable.fromPromise(MOCKDATA);
   }
 
 }
