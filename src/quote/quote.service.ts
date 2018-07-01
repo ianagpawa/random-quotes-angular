@@ -14,7 +14,9 @@ export class QuoteService {
   }
 
   getQuotes(): Observable<any> {
-    return Observable.fromPromise(MOCKDATA);
+    return Observable.fromPromise(new Promise((res) => {
+      res(MOCKDATA);
+    }));
   }
 
 }
