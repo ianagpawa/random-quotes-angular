@@ -4,7 +4,7 @@
 
 
 ### Quick Start
--Clone the repo: `git clone https://github.com/ianagpawa/random-quotes-angular.git`
+Clone the repo: `git clone https://github.com/ianagpawa/random-quotes-angular.git`
 
 ### Install Dependencies
 
@@ -31,7 +31,7 @@ Then point your browser to `http://0.0.0.0:8080/`.
 Within the project folder, you will find the following files:
 
 ```
-angular-webpack-seed/
+random-quoutes-angular/
     ├── config/
     |   ├── helpers.js
     |   ├── karma-test-shim.js
@@ -41,12 +41,22 @@ angular-webpack-seed/
     |   ├── webpack.prod.js
     |   └─── webpack.test.js
     ├── src/
+    |   ├── grid/
+    |   |   ├── grid.component.html
+    |   |   ├── grid.component.scss
+    |   |   └── grid.component.ts
+    |   ├── quote/
+    |   |   ├── quote.component.html
+    |   |   ├── quote.component.scss
+    |   |   ├── quote.component.ts
+    |   |   ├── quote.service.ts
+    |   |   └── quote.ts
     |   ├── root/
     |   |   ├── root.component.html
     |   |   ├── root.component.scss
     |   |   ├── root.component.spec.ts
     |   |   ├── root.component.ts
-    |   |   └─── root.module.ts
+    |   |   └── root.module.ts
     |   ├── app.scss
     |   ├── app.ts
     |   ├── index.html
