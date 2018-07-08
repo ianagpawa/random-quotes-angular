@@ -18,6 +18,15 @@ $   node -v
 $   npm install
 ```
 
+`pip install — upgrade pip setuptools`
+`pip install Flask`
+
+
+` pip install flask flask-jsonpify flask-sqlalchemy flask-restful`
+
+`pip install -U flask-cors`
+
+
 ### Viewing the app locally
 Execute the following command while in the project folder:
 ```
